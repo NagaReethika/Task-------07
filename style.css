@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    padding: 12px 30px;
+    border: none;
+    background: white;
+    color: #0077ff;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+}
+
+/* Users Section */
+.users-section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.users-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.user-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.user-card:hover {
+    transform: translateY(-8px);
+}
+
+.error {
+    color: red;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+.details-container {
+    max-width: 600px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.details-container button {
+    margin-top: 20px;
+}
+
+body {
+    background: #0f2027;
+    overflow: hidden;
+}
+
+.bubbles span {
+    position: absolute;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    animation: rise 15s infinite ease-in;
+}
+
+.bubbles span:nth-child(1) { left: 10%; animation-duration: 12s; }
+.bubbles span:nth-child(2) { left: 30%; animation-duration: 18s; }
+.bubbles span:nth-child(3) { left: 50%; animation-duration: 10s; }
+.bubbles span:nth-child(4) { left: 70%; animation-duration: 20s; }
+.bubbles span:nth-child(5) { left: 90%; animation-duration: 14s; }
+
+@keyframes rise {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-110vh); }
+}

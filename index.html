@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fetch API User App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+
+    <!-- Background Bubbles -->
+    <div class="bubbles">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to User Explorer</h1>
+        <p>Fetch and display user data dynamically using JavaScript Fetch API</p>
+        <button onclick="scrollToUsers()">View Users</button>
+    </section>
+
+    <!-- Users Section -->
+    <section id="usersSection" class="users-section">
+        <div class="users-header">
+            <h2>User Directory</h2>
+            <button id="reloadBtn">Reload Data</button>
+        </div>
+
+        <div id="userContainer" class="users-grid"></div>
+        <p id="errorMessage" class="error"></p>
+    </section>
+
+    <footer>
+        <p>Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        function scrollToUsers() {
+            document.getElementById("usersSection")
+                .scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+
+</body>
+</html>
